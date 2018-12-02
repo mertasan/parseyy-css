@@ -1,0 +1,42 @@
+{
+    "name": "parseyy-css",
+    "version": "0.0.1",
+    "description": "Parse, validate, and inspect CSS selectors",
+    "main": "dist/index.js",
+    "scripts": {
+        "compile-grammar": "nearleyc src/selector-grammar.ne -o src/selector-grammar.js",
+        "build": "npm run compile-grammar && babel src -d dist",
+        "prepare": "npm run build"
+    },
+    "keywords": [
+        "parseyy",
+        "parseyy-css",
+        "CSS",
+        "selector",
+        "parser",
+        "specificity"
+    ],
+    "bugs": {
+        "url": "https://github.com/mertasan/parseyy-css/issues",
+        "email": "mert@yediyuz.com"
+    },
+    "author": "Mert Aşan <mert@yediyuz.com> (https://github.com/mertasan)",
+    "contributors": [
+        "balbuf"
+    ],
+    "homepage": "https://github.com/mertasan/parseyy-css#readme",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mertasan/parseyy-css"
+    },
+    "license": "Apache-2.0",
+    "dependencies": {
+        "nearley": "^2.9.3"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.24.1",
+        "babel-plugin-transform-class-properties": "^6.24.1",
+        "babel-preset-env": "^1.5.1",
+        "markdown-toc": "^1.1.0"
+    }
+}
