@@ -34,9 +34,10 @@
         "nearley": "^2.9.3"
     },
     "devDependencies": {
-        "babel-cli": "^6.24.1",
-        "babel-plugin-transform-class-properties": "^6.24.1",
-        "babel-preset-env": "^1.5.1",
+        "@babel/cli": "^7.1.5",
+        "@babel/core": "^7.1.6",
+        "@babel/plugin-proposal-class-properties": "^7.1.0",
+        "@babel/preset-env": "^7.1.6",
         "markdown-toc": "^1.1.0"
     }
 }
